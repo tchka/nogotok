@@ -1,0 +1,43 @@
+/************************* Reset **************************/
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend {
+	margin: 0; padding: 0;
+}
+a img, :link img, :visited img {border: 0;}
+ol, ul {padding-left:25px;}
+q:before, q:after,blockquote:before, blockquote:after {content: "";}
+
+
+body { background: #ffffff; font-size: 12px; font-family: Tahoma; color: #333333; padding: 0px; margin: 0px; } 
+a { text-decoration: underline; color: #0080A0; }
+a:hover { text-decoration: none; }
+
+h1 { font-size: 24px; font-weight: Normal; margin: 0 0 15px 0; }
+
+.login { margin: 100px auto 0 auto; padding-left: 200px; padding-top: 20px; width: 218px; height: 240px; background: url(../img/lock.jpg) left top no-repeat; }
+.login .login-error { background: #c00000; color: #fff; padding: 4px 8px; border-radius: 4px; margin-bottom: 15px; }
+.login input.inputbox { font-family: Tahoma; font-size: 18px; font-weight: Normal; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; width: 200px; display: block; margin-bottom: 15px; }
+.login input.button { font-family: Tahoma; font-size: 18px; font-weight: Normal; color: #fff; padding: 4px 18px; background: #0080A0; border: 0px; border-radius: 4px; width: auto; cursor: pointer; }
+
+#overall { padding: 10px 60px; }
+
+.userinfo { padding: 20px 0px; }
+.userinfo span.userdata { list-style: inline-block; margin-right: 30px; font-size: 15px; }
+.userinfo ul { margin: 0; padding: 0; list-style: none; display: inline-block; }
+.userinfo ul li { margin: 0; padding: 0; display: inline-block; }
+.userinfo ul li a { background: #0080a0; color: #fff; text-decoration: none; display: inline-block; padding: 3px 9px; margin-right: 6px; border-radius: 2px; }
+.userinfo ul li a:hover { color: #0080a0; background: #fff; text-decoration: underline; }
+
+ul.menu { margin: 0; padding: 0; list-style: none; display: block; }
+ul.menu li { margin: 0; padding: 0; display: inline-block; }
+ul.menu li a { background: #0080a0; color: #fff; text-decoration: none; display: inline-block; padding: 3px 9px; margin-right: 6px; border-radius: 2px; }
+ul.menu li a:hover { color: #0080a0; background: #fff; text-decoration: underline; }
+
+.path { padding: 0px 0px 20px 0px; color: #ccc; font-size: 10px; }
+

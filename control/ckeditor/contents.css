@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&subset=cyrillic');
+
+/*
+Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+html { min-height: 110%; }
+
+body
+{
+	/* Font */
+	font-family: Verdana;
+	font-size: 13px;
+
+	/* Text color */
+	color: #000;
+
+	/* Remove the background color to make it transparent */
+	background-color: #fff;
+
+	padding: 0 0 0 0 ; margin: 0 10px 0 10px ;
+
+	min-height: 110%;
+}
+
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right:0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+    padding:0 40px;
+}
+
+.btn { font-family: 'PT Serif', serif; display: inline-block; border: 0; background: #ffc600; color: #0e0e0e; font-size: 1.14rem; line-height: 2.79em; padding: 0 2em; border-radius: .4em; text-decoration: none; font-weight: 700; outline: none; cursor: pointer; }
+
+.style-item { font-size: 0; margin: 2rem 0; }
+.style-item .image { display: inline-block; width: 35%; }
+.style-item .image img { max-width: 100%; height: auto; }
+.style-item .text { display: inline-block; vertical-align: top; width: 55%; padding-left: 50px; font-size: 1rem; padding-top: 2em; }
+.style-item .text .btn { margin-top: 2em; }
+
+.style-item:nth-child(2n) .image { float: right; }
+.style-item:nth-child(2n) .text { padding-left: 0; padding-right: 50px; }
+

@@ -1,0 +1,141 @@
+html, body { height: 100%; }
+
+body { background: #ffffff; font-size: 12px; font-family: Arial; color: #333333; padding: 0px; margin: 0px; } 
+a { text-decoration: underline; color: #0080A0; }
+a:hover { text-decoration: none; }
+
+.small { font-size: 11px; }
+
+#head { border-bottom: 1px solid #C4D8DC; }
+#title { background: #CDDCE3; padding: 10px 30px; font-weight: Bold; color: #0080A0; font-size: 16px; font-style: italic; line-height: 20px; }
+#userinfo { float: right; font-size: 11px; color: #777; font-style: Normal; font-weight: normal; line-height: 20px; }
+
+.menu { padding: 0 30px; background: #0080A0; border: 1px solid #0080A0; }
+.menu > ul { list-style: none; padding: 0px; margin: 0px; text-align: right; }
+.menu > ul > li { display: inline-block; width: 120px; background: #fff; padding: 2px 10px; margin-left: 1px; text-align: left; position: relative; }
+.menu > ul > li > span { display: block; color: #0080A0; }
+.menu > ul > li > span b { margin-right: 2px; font-weight: normal; }
+.menu > ul > li > ul { display: none; list-style: circle outside; color: #0080A0; position: absolute; background: #ffffff; border: 1px solid #0080a0; border-top: 0px; padding: 10px 0px 10px 25px; width: 115px; left: -1px; }
+.menu > ul > li > ul > li { padding: 2px 5px 2px 0px; }
+.menu > ul > li > ul > li.spacer { border-top: 1px solid #0080a0;margin-top: 6px; padding-top: 8px; }
+
+.menu > ul > li.list > span { padding-left: 26px; background-image: url(../img/menu-icon/list.gif); background-position: 2px 0; background-repeat: no-repeat; margin-left: -6px; }
+.menu > ul > li.users > span { padding-left: 26px; background-image: url(../img/menu-icon/users.png); background-position: 2px 0; background-repeat: no-repeat; margin-left: -6px; }
+.menu > ul > li.other > span { padding-left: 26px; background-image: url(../img/menu-icon/other.png); background-position: 2px 0; background-repeat: no-repeat; margin-left: -6px; }
+
+.menu > ul > li:hover > ul { display: block; }
+
+.path { padding: 2px 15px 2px 25px; border-bottom: 1px solid #C4D8DC; font-size: 10px; background: #E3E9EF; }
+#copyright { color: #b4D0DC; padding: 3px 25px; font-size: 10px; background: #E3E9EF; border-top: 1px solid #C4D8DC; position: fixed; left: 0; bottom: 0; right: 0; }
+#copyright a { color: #b4D0DC; }
+#copyright-spacer { height: 40px; }
+
+.content { padding: 15px 25px; font-size: 12px; font-family: Arial; color: #333333; }
+h1 { font-size: 18px; font-weight: Normal; margin: 0px 0px 15px 0px; }
+h2 { font-size: 15px; font-weight: Bold; margin: 0px 0px 12px 0px; }
+
+
+
+.navigation { text-align: right; background: #EEEEEE; }
+.navigation * { color: #9999AB; text-decoration: none; font-size: 13px; border: 0px; }
+.navigation a { color: #E90000; text-decoration: none; }
+.navigation td { text-align: center; padding: 0px 3px 0px 3px; border: 0px !important; }
+
+.item-table { margin-top: 15px; border: 1px solid #9E9E9E; width: 100%; border-collapse: collapse; } 
+table.item-table > tbody > tr > td { padding: 3px; } 
+.item-table th, .item-table td { border: 1px solid #9E9E9E; } 
+.item-table th { text-align: left; padding: 5px 5px 5px 5px; background: url("../img/th-back.gif") left bottom repeat-x #ffffff; }
+.item-table td.item { padding-left: 5px; }
+.item-table tr:hover { background: #DEEFFF; }
+.item-table td.category { font-size: 16px; }
+.item-table td.sub1 { padding-left: 25px; }
+
+.unactive { background-color: #fbb; }
+
+
+table.t_form { width: 100%; margin: 5px 0px 5px 0px; font-size: 13px; border-left: 1px solid #DDDEE1; border-top: 1px solid #DDDEE1; }
+table.t_form td.input, table.t_form th { padding: 3px 5px 3px 5px; border-right: 1px solid #DDDEE1; border-bottom: 1px solid #DDDEE1; }
+table.t_form td.input { width: 80%; }
+table.t_form td.nopadding { padding: 0px; }
+table.t_form th { width: 20%; padding: 3px 5px 3px 5px; font-weight: Bold; text-align: left; background: #F5F5F5; }
+table.t_form input.text { border: 1px solid #000000; width: 99%; }
+table.t_form input.href { border: 1px solid #000000; width: 300px; }
+table.t_form textarea.short { border: 1px solid #000000; width: 99%; height: 70px; }
+table.t_form textarea.normal { border: 1px solid #000000; width: 99%; height: 110px; }
+table.t_form tr.error,
+table.t_form tr.error th,
+table.t_form tr.error td { background: #ffbbbb; }
+input.x-short { width: 50px !important; }
+
+table.t_form .search-user { display: inline-block; width: 300px; position: relative; }
+table.t_form .search-user .input { border: 1px solid #000000; display: block; width: 99%; outline: none; }
+table.t_form .search-user .result { display: none; position: absolute; left: 0; right: 0; top: 20px; background: #fff; border: 1px solid #000; z-index: 1000; }
+table.t_form .search-user .result ul { list-style: none; margin: 0 0 0 0 ; padding: 0 0 0 0; }
+table.t_form .search-user .result ul li { padding: 4px 10px 4px 10px; cursor: pointer; }
+table.t_form .search-user .result ul li:hover { background: #efefef; }
+table.t_form .search-user-result { display: inline-block; }
+table.t_form .search-user-result .ok { color: #5cb85c;}
+table.t_form .search-user-result .err { color: #d9534f;}
+
+
+.help { font-weight: Normal; color: #A0A0A0; font-size: 11px; }
+
+.f_form input.button { width: 100px; margin: 0px 15px 0px 15px; border: 1px solid #000000; }
+
+div.done { background: #eeffee; border: 2px solid #55dd55; color: #003300; padding: 5px 10px; margin-bottom: 10px; }
+div.error { background: #ffeeee; border: 2px solid #dd5555; color: #330000; padding: 5px 10px; margin-bottom: 10px; }
+
+
+.settings_work_checkboxes div { width: 200px; float: left; }
+
+.faq_category { font-size: 17px; text-decoration: underline; display: block; margin: 15px 0px 10px 0px; }
+.faq_category_layer { display: none; }
+
+.button { margin-bottom: 10px; }
+.button a { background: #0080A0; color: #fff; padding: 2px 5px; text-decoration: none; margin-right: 15px; }
+.button a:hover { background: #fff; color: #0080A0; }
+.button a.red { background: #A00; color: #fff; }
+.button a.red:hover { background: #fff; color: #a00; }
+
+.moveup,
+.movedown,
+.view,
+.edit,
+.delete { display: inline-block; width: 24px; height: 24px; text-decoration: none; border: 0px; background-position: center center; background-repeat: no-repeat; }
+
+.moveup { background-image: url(../img/action/up.png); }
+.movedown { background-image: url(../img/action/down.png); }
+.edit { background-image: url(../img/action/edit.png); }
+.delete { background-image: url(../img/action/delete.png); }
+.view { background-image: url(../img/action/open.png); }
+
+.field_image_preview { padding: 5px 10px; }
+
+.news-visible { padding: 2px 0; }
+.news-visible-button { padding: 2px 0 4px; }
+.news-visible-button a { margin-right: 25px; text-decoration: none; border-bottom: 1px dashed #0080A0; }
+.news-visible-button a:hover { border-bottom: 1px dashed #fff; }
+
+ul.category { list-style: none; margin: 25px 0 25px 0; padding: 0 0 0 0; font-size: 14px; }
+ul.category li { padding: 3px 5px; }
+
+.upload_form label { margin-right: 10px; font-size: 13px; display: inline-block; vertical-align: middle; }
+.upload_form input.input { font-family: Arial; font-size: 13px; color: #333; padding: 3px 9px; border: 1px solid #999; vertical-align: middle; width: 300px; margin-right: 10px; }
+.upload_form input.button { background: #0080A0; color: #fff; padding: 4px 9px; text-decoration: none; border: 0; font-size: 13px; width: auto; cursor: pointer; }
+.upload_form input.button:hover { background: transparent; color: #0080A0; text-decoration: underline; }
+
+.upload-table .category { font-size: 15px; }
+.upload-table .category td { padding: 6px 12px; font-weight: bold; }
+.upload-table .new { background: #f99; }
+
+.upload-table input, .upload-table textarea { border: 1px solid #e0e0e0; }
+.upload-table input:focus, .upload-table textarea:focus { border: 1px solid #e0e0f0; }
+
+.upload-table input.article { width: 50px; }
+.upload-table input.title { width: 150px; }
+.upload-table input.price { width: 70px; }
+.upload-table textarea { width: auto; height: 50px; display: block;  }
+
+.upload-button { padding: 15px 0; }
+.upload-button input { background: #0080A0; color: #fff; padding: 4px 9px; text-decoration: none; border: 0; font-size: 13px; width: auto; cursor: pointer; }
+.upload-button input:hover { background: transparent; color: #0080A0; text-decoration: underline; }
